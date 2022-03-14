@@ -1,0 +1,23 @@
+{
+  "name": "javascript-calculator",
+  "version": "1.0.0",
+  "description": "Calculator Project for The Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build -i ./src/styles.css -o ./public/styles.css",
+    "live-server": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soithangsing/javascript-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soithangsing/javascript-calculator/issues"
+  },
+  "homepage": "https://github.com/soithangsing/javascript-calculator#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
