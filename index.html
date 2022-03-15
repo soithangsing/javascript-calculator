@@ -4,84 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./public/styles.css">
+
     <title>Calculator</title>
 </head>
 
 <body class="bg-slate-300 overflow-hidden">
     <header class="text-center">
-        <div class="top-0 left-0 flex w-full items-center justify-center text-gray-700 text-center p-4">
-           JavaScript Calculator
+        <div class="top-0 left-0 flex w-full items-center justify-center text-gray-700 text-center p-4 font-footer font-normal">
+           << JavaScript Calculator >>
         </div>
     </header>
-    <main class="w-3/4 flex justify-center items-center">
-        <div class="p-4 bg-white rounded-lg border shadow-md ">
-            
-            <div>
-                <div ">Calculation</div>
-                <div class="bg-yellow p-2">Result</div>
+    <main class="h-[75vh] min-h-[500px] flex justify-center items-center p-2 mt-5">
+        <div class="p-4 bg-sky-500 rounded shadow-md border-solid border-2 border-black w-[400px]">
+            <div class="pt-2 pb-2 pl-5 pr-5 border-solid border-2 border-black rounded mb-5 bg-teal-200 text-right break-words break-all">
+                <div class="min-h-[32px] text-base text-fuchsia-500 font-medium font-calculator">Calculation</div>
+                <div class="min-h-[64px] text-5xl mb-0 text-fuchsia-500 font-bold font-calculator">Result</div>
             </div>
            
-            <div class="grid">
-                <button class="bg-red-500">
+            <div class="grid grid-cols-4 gap-2.5">
+                <button class="bg-red-500 col-span-2 text-xl p-5 border-2 border-black border-solid">
                     CLEAR
                 </button>
-                <button class="bg-amber-400">
+                <button class="bg-amber-400 col-span-2 text-xl p-5 border-2 border-black border-solid">
                     BACKSPACE
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                    7
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     8
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     9
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     ÷
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     4
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     5
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     6
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     ×
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     1
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     2
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     3
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     -
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     .
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     0
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     =
                 </button>
-                <button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500">
                     +
                 </button>
             </div>
         </div>
     </main>
     <footer class="text-center">
-        <div class="text-gray-700 text-center p-4 absolute bottom-0 left-0 flex w-full items-center justify-center">
+        <div class="text-gray-700 text-center p-4 absolute bottom-0 left-0 flex w-full items-center justify-center font-footer">
             Built by Soilianmang Thangsing
         </div>
     </footer>

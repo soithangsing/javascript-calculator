@@ -342,8 +342,9 @@ module.exports = {
       0: '0',
       DEFAULT: '1',
     },
+    
     fontFamily: {
-      sans: [
+      sans: ['Lexend Deca',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -370,6 +371,8 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      calculator: ['Major Mono Display', 'monospace'],
+      footer: ['Lexend Deca', 'sans-serif'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
