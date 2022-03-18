@@ -23,65 +23,29 @@
     <main class="h-[75vh] min-h-[500px] flex justify-center items-center p-2 mt-5">
         <div class="p-4 bg-sky-500 rounded shadow-md border-solid border-2 border-black w-[400px]">
             <div class="pt-2 pb-2 pl-5 pr-5 border-solid border-2 border-black rounded mb-5 bg-teal-200 text-right break-words break-all">
-                <div class="min-h-[32px] text-base text-fuchsia-500 font-medium font-calculator calculation">Calculation</div>
-                <div class="min-h-[64px] text-5xl mb-0 text-fuchsia-500 font-bold font-calculator result tracking-normal">Result</div>
+                <div class="min-h-[32px] text-base text-fuchsia-500 font-medium font-calculator" id="calculation"></div>
+                <div class="min-h-[64px] text-5xl mb-0 text-fuchsia-500 font-bold font-calculator tracking-normal" id="result">0</div>
             </div>
            
             <div class="grid grid-cols-4 gap-2.5">
-                <button class="text-red-500 col-span-2 text-xl p-5 border-2 border-red-500 bg-yellow-300 border-solid button__clear" onclick="this.blur();">
-                    CLEAR
-                </button>
-                <button class="bg-yellow-300 col-span-2 text-amber-600 text-xl p-5 border-2 border-amber-600 border-solid button__back" onclick="this.blur();">
-                    BACKSPACE
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__7 num" onclick="this.blur();" data-number >
-                   7
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__8 num" onclick="this.blur();" data-number>
-                    8
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__9 num" onclick="this.blur();" data-number>
-                    9
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__divide" onclick="this.blur();" data-operator>
-                    ÷
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__4 num" onclick="this.blur();" data-number>
-                    4
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__5 num" onclick="this.blur();" data-number>
-                    5
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__6 num" onclick="this.blur();" data-number>
-                    6
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__multiply" onclick="this.blur();" data-operator>
-                    ×
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__1 num" onclick="this.blur();" data-number>
-                    1
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__2 num" onclick="this.blur();" data-number>
-                    2
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__3 num" onclick="this.blur();" data-number>
-                    3
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__minus" onclick="this.blur();" data-operator>
-                    -
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__decimal num" onclick="this.blur();">
-                    .
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button_0 num" onclick="this.blur();" data-number="0">
-                    0
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__equalsTo" onclick="this.blur();" data-operator>
-                    =
-                </button>
-                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__add" onclick="this.blur();" data-operator>
-                    +
-                </button>
+                <button class="text-red-500 col-span-2 text-xl p-5 border-2 border-red-500 bg-yellow-300 border-solid" id="button__clear" onclick="this.blur();">CLEAR</button>
+                <button class="bg-yellow-300 col-span-2 text-amber-600 text-xl p-5 border-2 border-amber-600 border-solid" id="button__back" onclick="this.blur();">BACKSPACE</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__7 num" onclick="this.blur();" data-number>7</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__8 num" onclick="this.blur();" data-number>8</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__9 num" onclick="this.blur();" data-number>9</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__divide" onclick="this.blur();" data-operator>÷</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__4 num" onclick="this.blur();" data-number>4</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__5 num" onclick="this.blur();" data-number>5</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__6 num" onclick="this.blur();" data-number>6</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__multiply" onclick="this.blur();" data-operator>×</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__1 num" onclick="this.blur();" data-number>1</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__2 num" onclick="this.blur();" data-number>2</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__3 num" onclick="this.blur();" data-number>3</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__minus" onclick="this.blur();" data-operator>-</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 num" id="button__decimal" onclick="this.blur();">.</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button_0 num" onclick="this.blur();" data-number>0</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500" id="button__equalsTo" onclick="this.blur();">=</button>
+                <button class="text-xl p-5 border-2 border-black border-solid bg-yellow-300 hover:bg-yellow-500 button__add" onclick="this.blur();" data-operator>+</button>
             </div>
         </div>
     </main>
