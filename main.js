@@ -51,3 +51,14 @@ const operate = (operator, num1, num2) => {
     }
 }
 
+//  Create the functions that populate the display when you click the number buttons… you should be storing the ‘display value’ in a variable somewhere for use in the next step.
+
+const firstNumber = [];
+
+const populateDisplay = () => {
+    
+}
+
+const allNumberBtns = document.querySelectorAll('.num');
+
+allNumberBtns.forEach(element => element.addEventListener('click', populateDisplay))
