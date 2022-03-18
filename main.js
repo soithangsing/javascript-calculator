@@ -10,6 +10,7 @@ const result = document.querySelector('.result');
 const clearBtn = document.querySelector('.button__clear');
 const backBtn = document.querySelector('.button__back');
 
+const allNumberBtns = document.querySelectorAll('[data-number]');
 const Btn1 = document.querySelector('.button__1');
 const Btn2 = document.querySelector('.button__2');
 const Btn3 = document.querySelector('.button__3');
@@ -52,13 +53,14 @@ const operate = (operator, num1, num2) => {
 }
 
 //  Create the functions that populate the display when you click the number buttons… you should be storing the ‘display value’ in a variable somewhere for use in the next step.
+let firstInputNumber = []
 
-const firstNumber = [];
-
-const populateDisplay = () => {
-    
+const populateDisplay = (number) => {
+        result.textContent += number.trim();
+        firstInputNumber.push(Number(number.trim()));
+        console.log(firstInputNumber);
 }
 
-const allNumberBtns = document.querySelectorAll('.num');
+// Join and convert to number to get first operation number
 
-allNumberBtns.forEach(element => element.addEventListener('click', populateDisplay))
+allNumberBtns.forEach(element => element.addEventListener('click', () => populateDisplay(element.textContent)))
